@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="川瀬健大のポートフォリオです">
+  <!-- css -->
+  <link rel="stylesheet" href="html5reset-1.6.1.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- css -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+  <title>Work04</title>
+</head>
+
+<body>
+
+  <div id="loader-bg">
+    <div id="loader">
+      <img src="img/loading.gif" alt="Now Loading..." class="loading-gif" />
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="modal js-modal">
+      <div class="modal__bg js-modal-close"></div>
+      <div class="modal__content wf-hannari">
+        <a class="js-modal-close close-btn" href=""><img src="img/close@2x.png" alt="close"></a>
+        <form
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfkSIZYS1vcsR0GMC2FwEVOskw27-IkHV_gbEMR3hjsW-8WOg/formResponse"
+          class="form">
+          <div class="name box">
+            <label for="modal-name">お名前</label>
+            <input type="text" id="modal-name" name="entry.2005620554" class="modal-name" required placeholder="例：石井太郎">
+          </div>
+          <div class="email box">
+            <label for="modal-email">メールアドレス</label>
+            <input type="email" name="entry.1045781291" class="modal-email" id="modal-email" required
+              placeholder="例：Example@example.com">
+          </div>
+          <div class="content box">
+            <label for="modal-content">お問い合わせ内容</label>
+            <textarea name="entry.839337160" class="content" id="modal-content" required placeholder="お問い合わせ内容をご入力ください"
+              rows="5"></textarea>
+          </div>
+          <input type="submit" value="送信する" class="submit-btn js-submit" disabled>
+          <p class="end-message">お問い合わせありがとうございました</p>
+          <p class="false-message">送信失敗です</p>
+        </form>
+      </div>
+    </div>
+    <!--modal__inner-->
+    <!--modal-->
+
+    <header class="header">
+      <div class="header-inner">
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <ul class="drawer-menu">
+              <li class="drawer-item"><a href="/index.html">Top</a></li>
+              <li class="drawer-item"><a href="/index.html#skills">Skills</a></li>
+              <li class="drawer-item"><a href="/index.html#works">Works</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-left">
+          <h1>
+            <a class="top">
+              <h1 class="main-logo">Kenta<br>Kawase/Portfolio</h1>
+            </a>
+          </h1>
+        </div>
+        <div class="header-right">
+          <a class="js-modal-open" href="">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 3. classを付与（ main-content / sidebar / sidebar__inner / content ） -->
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="sidebar-inner">
+          <div class="inner_content">
+            <nav>
+              <a href="/index.html">
+                <h1>Kenta<br>Kawase/Portfolio</h1>
+              </a>
+              <ul class="nav-menu">
+                <li>
+                  <a class="toggle">Contact</a>
+                  <ul class="inner child wf-hannari">
+                    <form
+                      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfkSIZYS1vcsR0GMC2FwEVOskw27-IkHV_gbEMR3hjsW-8WOg/formResponse"
+                      id="form">
+                      <div class="name box">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="entry.2005620554" class="name" required placeholder="例：石井太郎">
+                      </div>
+                      <div class="email box">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" name="entry.1045781291" class="email" id="email" required
+                          placeholder="例：Example@example.com">
+                      </div>
+                      <div class="content box">
+                        <label for="content">お問い合わせ内容</label>
+                        <textarea name="entry.839337160" class="content" id="content" required
+                          placeholder="お問い合わせ内容をご入力ください" rows="5"></textarea>
+                      </div>
+                      <input type="submit" value="送信する" class="submit-btn" id="js-submit" disabled>
+                    </form>
+                  </ul>
+                  <p class="end-message">お問い合わせありがとうございました</p>
+                  <p class="false-message">送信失敗です</p>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <section class="work-detail-box">
+          <div class="work-detail">
+            <div class="work-img">
+              <a href="https://meshigatya3.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <img src="img/meshigatya-full.png" alt="">
+                <img src="img/meshigatya-user.png" alt="">
+                <img src="img/meshigatya-interest.png" alt="">
+              </a>
+            </div>
+            <div class="work-info wf-notosansjapanese">
+              <a href="https://meshigatya3.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img
+                  src="img/meshigatya-logo.png" alt="" class="meshigatya-logo"></a>
+              <ul>
+                <li>Ruby on Railsを使用したオリジナルアプリ</li>
+                <li>現在位置至近の飲食店をランダムに一店舗提案</li>
+                <li>Ruby&nbsp;on&nbsp;Rails、HTML、CSS(Sass)、Bootstrap、
+                  JavaScript(jQuery)を使用</li>
+                <li>Geocoding API、ぐるなびAPI、Google Maps APIを使用</li>
+                <li>飲食店の感想投稿や他ユーザーの投稿閲覧、気になるリストへの追加などが可能</li>
+                <li>投稿をベースにおすすめユーザーを表示</li>
+                <li>検索結果からチェーン店を除外</li>
+              </ul>
+              <p class="impressions">TechAcademy受講時に作成した、オリジナルアプリです。
+                JavaScriptに関してはサポート外だったので、APIからのJSONデータをアプリの仕様に合わせるのにかなり苦労しました。<br>
+                残念ですが現在、ぐるなびAPIがサービス終了となっているので使用が出来なくなっています。。。
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/jquery.sticky-sidebar.min.js"></script>
+
+
+  <!-- 4. jQuery にて、stickySidebarを適用 -->
+</body>
+
+</html>

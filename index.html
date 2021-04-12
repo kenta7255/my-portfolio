@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="川瀬健大のポートフォリオです">
+  <!-- css -->
+  <link rel="stylesheet" href="html5reset-1.6.1.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- css -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+  <title>Kenta Kawase/Portfolio</title>
+</head>
+
+<body>
+
+  <div id="loader-bg">
+    <div id="loader">
+      <img src="img/loading.gif" alt="Now Loading..." class="loading-gif" />
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="modal js-modal">
+      <div class="modal__bg js-modal-close"></div>
+      <div class="modal__content wf-hannari">
+        <a class="js-modal-close close-btn" href=""><img src="img/close@2x.png" alt="close"></a>
+        <form
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfkSIZYS1vcsR0GMC2FwEVOskw27-IkHV_gbEMR3hjsW-8WOg/formResponse"
+          class="modal-form">
+          <div class="name box">
+            <label for="modal-name">お名前</label>
+            <input type="text" id="modal-name" name="entry.2005620554" class="modal-name" required placeholder="例：石井太郎">
+          </div>
+          <div class="email box">
+            <label for="modal-email">メールアドレス</label>
+            <input type="email" name="entry.1045781291" class="modal-email" id="modal-email" required
+              placeholder="例：Example@example.com">
+          </div>
+          <div class="content box">
+            <label for="modal-content">お問い合わせ内容</label>
+            <textarea name="entry.839337160" class="content" id="modal-content" required placeholder="お問い合わせ内容をご入力ください"
+              rows="5"></textarea>
+          </div>
+          <input type="submit" value="送信する" class="submit-btn modal-js-submit" disabled>
+          <p class="end-message">お問い合わせありがとうございました</p>
+          <p class="false-message">送信失敗です</p>
+        </form>
+      </div>
+    </div>
+    <!--modal__inner-->
+    <!--modal-->
+
+    <header class="header">
+      <div class="header-inner">
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <ul class="drawer-menu">
+              <li class="drawer-item"><a href="#skills">Skills</a></li>
+              <li class="drawer-item"><a href="#works">Works</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-left">
+          <h1>
+            <a class="top">
+              <h1 class="main-logo">Kenta<br>Kawase/Portfolio</h1>
+            </a>
+          </h1>
+        </div>
+        <div class="header-right">
+          <a class="js-modal-open" href="">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="sidebar-inner">
+          <div class="inner_content">
+            <nav>
+              <a href="#">
+                <h1>Kenta<br>Kawase/Portfolio</h1>
+              </a>
+              <ul class="nav-menu">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Works</a></li>
+                <li>
+                  <a class="toggle">Contact</a>
+                  <ul class="inner child wf-hannari">
+                    <form
+                      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfkSIZYS1vcsR0GMC2FwEVOskw27-IkHV_gbEMR3hjsW-8WOg/formResponse"
+                      class="toggle-form">
+                      <div class="name box">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="entry.2005620554" class="name" required placeholder="例：石井太郎">
+                      </div>
+                      <div class="email box">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" name="entry.1045781291" class="email" id="email" required
+                          placeholder="例：Example@example.com">
+                      </div>
+                      <div class="content box">
+                        <label for="content">お問い合わせ内容</label>
+                        <textarea name="entry.839337160" class="content" id="content" required
+                          placeholder="お問い合わせ内容をご入力ください" rows="6"></textarea>
+                      </div>
+                      <input type="submit" value="送信する" class="submit-btn sidebar-js-submit" disabled>
+                    </form>
+                  </ul>
+                  <p class="end-message">お問い合わせありがとうございました</p>
+                  <p class="false-message">送信失敗です</p>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <section class="mv">
+          <img src="#" class="mv-img" alt="mv" id="randomShow">
+        </section>
+
+        <section id="about-me" class="about-me">
+          <h2 class="section-title">- About Me -</h2>
+          <div class="about-me-box">
+            <p>愛知県出身、都内在住の２７歳。
+              <br>独学でHTML5,CSS3,JavaScript/JqueryなどWEB制作に必要な技術と<br>
+              TechAcademyにてWEBアプリケーションコースを受講し、Ruby on Railsを学習。<br>
+              現在は市場調査会社のWEB作成部門にて、WEBアンケートの作成を行っている。<br> よりモダンで汎用的なスキルを身に着けたいという思いがあり転職活動をスタート。
+            </p>
+          </div>
+        </section>
+
+
+        <section class="skills" id="skills">
+          <h2 class="section-title">- Skills -</h2>
+          <div class="skills-grid">
+            <div class="skill"><img src="img/html5.svg" alt="">
+              <div class="mask" ontouchstart="">
+                <div class="caption">
+                  <h3 class="skill-title">HTML5</h3>
+                  <p class="wf-notosansjapanese">現職で使用、独学でも学習し、コーディング可能です。</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill"><img src="img/css3.svg" alt="">
+              <div class="mask" ontouchstart="">
+                <div class="caption">
+                  <h3 class="skill-title">CSS3</h3>
+                  <p class="wf-notosansjapanese">
+                    現職で使用。独学でも学習し、コーディング可能です。<br>より保守性の高い書き方ができるように、BEMなどの命名規則などを書籍を用いて勉強中です。</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill"><img src="img/sass.svg" alt="">
+              <div class="mask" ontouchstart="">
+                <div class="caption">
+                  <h3 class="skill-title">Sass</h3>
+                  <p class="wf-notosansjapanese">作品のコーディングや、オリジナルアプリの作成時に使用しました。<br>
+                    より効果的な使用や、体系的な理解を進めるため、書籍を用いて勉強中です。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="skill"><img src="img/jquery.svg" alt="" class="center">
+              <div class="mask" ontouchstart="">
+                <div class="caption">
+                  <h3 class="skill-title">jQuery</h3>
+                  <p class="wf-notosansjapanese">作品のコーディングや、オリジナルアプリの作成時に使用しました。<br>
+                    モーダル、アコーディオンなどの頻出機能を実装可能です。体系的な理解がまだまだなので、書籍などを用いて現在勉強中です。</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill"><img src="img/logo-javascript.svg" alt="">
+              <div class="mask" ontouchstart="">
+                <div class="caption">
+                  <h3 class="skill-title">JavaScript</h3>
+                  <p class="wf-notosansjapanese">作品のコーディングや、オリジナルアプリの作成時に使用しました。<br>
+                    体系的な理解を進めるため、こちらも書籍で勉強を進めます。</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill"><img src="img/perl.svg" alt="">
+              <div class="mask" ontouchstart="">
+                <div class="caption">
+                  <h3 class="skill-title">Perl</h3>
+                  <p class="wf-notosansjapanese">現職で使用。</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill"><img src="img/ruby.svg" alt="">
+              <div class="mask" ontouchstart="">
+                <div class="caption">
+                  <h3 class="skill-title">Ruby</h3>
+                  <p class="wf-notosansjapanese">オリジナルアプリ作成時などで使用しました。<br>
+                    TechAcademyの受講で、体系的に学習しました。新たにブラッシュアップなどはしていないですが、プログラミング言語の理解の底上げになったと感じています。</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill"><img src="img/rails.svg" alt="" class="center">
+              <div class="mask" ontouchstart="">
+                <div class="caption">
+                  <h3 class="skill-title">Ruby on Rails</h3>
+                  <p class="wf-notosansjapanese">オリジナルアプリ作成時などで使用しました。<br>
+                    TechAcademyの受講で、体系的に学習しました。<br>
+                    簡単なアプリの実装（Twitterのクローンアプリやオリジナルアプリ）が出来ます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="skill"><img src="img/bootstrap-4.svg" alt="">
+              <div class="mask" ontouchstart="">
+                <div class="caption">
+                  <h3 class="skill-title">Bootstrap</h3>
+                  <p class="wf-notosansjapanese">オリジナルアプリ作成時に使用。<br>基本的な知識があり、使用できます。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="works" id="works">
+
+          <h2 class="section-title">- Works -</h2>
+          <div class="works-grid">
+            <div class="work">
+              <a href="/work01.html">
+                <img src="img/syokyu-ex-first-view.png" alt="" class="work-img" ontouchstart="">
+              </a>
+            </div>
+            <div class="work">
+              <a href="/work02.html">
+                <img src="img/tyukyu-first-view.png" alt="" class="work-img" ontouchstart="">
+              </a>
+            </div>
+            <div class="work">
+              <a href="/work03.html">
+                <img src="img/tyukyu-ex-first-view.png" alt="" class="work-img" ontouchstart="">
+              </a>
+            </div>
+            <div class="work">
+              <a href="work04.html">
+                <img src="img/meshigatya.png" alt="" class="work-img" ontouchstart="">
+              </a>
+            </div>
+            <div class="work">
+              <a href="/work05.html">
+                <img src="img/portfolio.png" alt="" class="work-img" ontouchstart="">
+              </a>
+            </div>
+            <div class="work">
+              <a href="/work06.html">
+                <img src="img/typing-game-top.png" alt="" class="work-img" ontouchstart="">
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/jquery.sticky-sidebar.min.js"></script>
+
+
+  <!-- 4. jQuery にて、stickySidebarを適用 -->
+</body>
+
+</html>

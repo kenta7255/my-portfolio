@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="川瀬健大のポートフォリオです">
+  <!-- css -->
+  <link rel="stylesheet" href="html5reset-1.6.1.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- css -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+  <title>Kenta Kawase/Portfolio</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- 3. classを付与（ main-content / sidebar / sidebar__inner / content ） -->
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="sidebar-inner">
+          <div class="inner_content">
+            <nav>
+              <a href="/index.html">
+                <h1>Kenta<br>Kawase/Portfolio</h1>
+              </a>
+              <ul class="nav-menu">
+                <li>
+                  <a href="#" class="toggle">Contact</a>
+                  <ul class="inner child wf-hannari">
+                    <div class="name box">
+                      <label for="name">お名前</label>
+                      <input type="text" id="name" name="name" class="name" required placeholder="例：石井太郎">
+                    </div>
+                    <div class="email box">
+                      <label for="email">メールアドレス</label>
+                      <input type="email" name="email" class="email" id="email" required
+                        placeholder="例：Example@example.com">
+                    </div>
+                    <div class="content box">
+                      <label for="content">お問い合わせ内容</label>
+                      <textarea name="content" class="content" id="content" required placeholder="お問い合わせ内容をご入力ください"
+                        rows="5"></textarea>
+                    </div>
+                    <input type="submit" value="送信する" class="modal-btn">
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <section class="skills" id="skills">
+
+          <h2 class="section-title">- Skills -</h2>
+          <div class="skills-grid">
+            <div class="skill"><img src="img/html5.svg" alt="">
+              <div class="mask">
+                <div class="caption">
+                  <h3 class="skill-title">HTML5</h3>
+                  <p class="wf-notosansjapanese">現職で使用。独学で学習し、基本的な知識があります。</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill"><img src="img/jquery.svg" alt="" class="center">
+              <div class="mask">
+                <div class="caption">
+                  <h3 class="skill-title">jQuery</h3>
+                  <p class="wf-notosansjapanese">現職で使用。独学で学習し、基本的な知識があります。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill"><img src="img/rails.svg" alt="" class="center">
+            <div class="mask">
+              <div class="caption">
+                <h3 class="skill-title">Ruby on Rails</h3>
+                <p class="wf-notosansjapanese">現職で使用。独学で学習し、基本的な知識があります。</p>
+              </div>
+            </div>
+          </div>
+          <div class="skill"><img src="img/bootstrap-4.svg" alt="">
+            <div class="mask">
+              <div class="caption">
+                <h3 class="skill-title">Bootstrap</h3>
+                <p class="wf-notosansjapanese">現職で使用。独学で学習し、基本的な知識があります。</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  </div>
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/jquery.sticky-sidebar.min.js"></script>
+
+
+  <!-- 4. jQuery にて、stickySidebarを適用 -->
+</body>
+
+</html>
